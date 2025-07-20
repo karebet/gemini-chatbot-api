@@ -10,13 +10,6 @@ form.addEventListener('submit', async function (e) {
 
   appendMessage('user', userMessage);
   input.value = '';
-
-  // Simulasi dummy balasan bot (placeholder)
-  setTimeout(() => {
-    
-  }, 1000);
-	
-  
       try {
         const res = await fetch('/api/chat', {
           method: 'POST',
